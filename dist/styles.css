@@ -11,16 +11,9 @@
 .teaser-heading h2{font-size:28px;letter-spacing:-.7px;margin-top:12px}
 .teaser-video-frame{aspect-ratio:16/9;border:1px solid #e0e4e1;border-radius:14px;overflow:hidden;background:#f0f2ef}
 .teaser-video{display:block;width:100%;height:100%;object-fit:contain;background:#171d20}
-.teaser-video-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;background:radial-gradient(ellipse at 50% 40%,#fafbf8,#edf0ec)}
-.teaser-placeholder-mark{display:flex;gap:4px;margin-bottom:24px}
-.teaser-placeholder-mark i{width:15px;height:48px;background:#fff;border:1px solid #d7deda;border-radius:0 0 3px 3px}
-.teaser-placeholder-mark i:nth-child(2),.teaser-placeholder-mark i:nth-child(4){border-top:3px solid #a4bac6}
-.teaser-video-placeholder p{font-size:20px;letter-spacing:-.3px;color:#59686b;margin:0 0 12px}
-.teaser-video-placeholder>span:last-child{font-size:12px;letter-spacing:.3px;color:#788580}
-.teaser-page footer{padding-top:23px;padding-bottom:28px}
-@media(max-width:760px){.teaser-page .hero{padding-top:24px;padding-bottom:24px}.teaser-page .authors{max-width:480px;line-height:1.9}.teaser-performance{padding-top:10px;padding-bottom:40px}.teaser-heading{margin-bottom:20px}.teaser-heading h2{font-size:24px}.teaser-heading .section-kicker{font-size:8px}.teaser-video-frame{border-radius:10px}.teaser-placeholder-mark{margin-bottom:16px;gap:3px}.teaser-placeholder-mark i{width:11px;height:34px}.teaser-video-placeholder p{font-size:16px;margin-bottom:8px}.teaser-video-placeholder>span:last-child{font-size:10px}}
 
-.teaser-video-note{text-align:center;font-size:11px;line-height:1.7;color:#788580;margin:15px 0 0}
+.teaser-page footer{padding-top:23px;padding-bottom:28px}
+@media(max-width:760px){.teaser-page .hero{padding-top:24px;padding-bottom:24px}.teaser-page .authors{max-width:480px;line-height:1.9}.teaser-performance{padding-top:10px;padding-bottom:40px}.teaser-heading{margin-bottom:20px}.teaser-heading h2{font-size:24px}.teaser-heading .section-kicker{font-size:8px}.teaser-video-frame{border-radius:10px}}
 
 .progress-notice{margin:24px 0 0;font:italic 22px/1.4 Georgia,serif;color:#a16c57}
 
