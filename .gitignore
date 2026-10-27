@@ -1,3 +1,7 @@
 .DS_Store
 __pycache__/
 *.log
+
+# Local video generation and provenance; not part of the published website.
+/tools/
+/media/
