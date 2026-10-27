@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="DexPiano — exploring dexterous bimanual piano playing with human motion priors and robot learning.">
+<meta name="description" content="DexPiano — learning the touch of a pianist. Real robot piano performances.">
 <meta name="theme-color" content="#fafaf8"><title>DexPiano — Dexterous Bimanual Piano Playing</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<a class="skip-link" href="#overview">Skip to content</a>
-<header class="nav"><a class="wordmark" href="#" aria-label="DexPiano home">DexPiano</a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#performances">Performances</a><a href="#resources">Resources <span aria-hidden="true">↗</span></a></nav></header>
+<body class="teaser-page">
+<a class="skip-link" href="#performances">Skip to content</a>
+<header class="nav"><a class="wordmark" href="#" aria-label="DexPiano home">DexPiano</a><nav aria-label="Main navigation" hidden><a href="#overview">Overview</a><a href="#method">Method</a><a href="#performances">Performances</a><a href="#resources">Resources <span aria-hidden="true">↗</span></a></nav></header>
 <main>
 <section class="hero" aria-labelledby="title">
 <div class="eyebrow"><span></span> ROBOT LEARNING MEETS MUSIC</div>
 <h1 id="title">Dex<span>Piano</span><svg class="title-notes" viewBox="0 0 70 70" aria-hidden="true"><path d="M26 43V14l29-6v29M26 23l29-6"/><ellipse cx="19" cy="45" rx="8" ry="5" transform="rotate(-20 19 45)"/><ellipse cx="48" cy="39" rx="8" ry="5" transform="rotate(-20 48 39)"/></svg></h1>
 <p class="subtitle">Learning the touch of a pianist.</p>
-<p class="hero-description">Dexterous bimanual piano playing with human motion priors<br class="desktop-break"> and reinforcement learning.</p>
-<p class="authors"><span>Wuyue,</span> <span>Kaizhe,</span> <span>Zhang Han,</span> <span>Chenyuan,</span> <span>Fred,</span> <span>Yao Xi,</span> <span>Zeyu,</span> <span>Tianming,</span> <span>Zhecheng,</span> <span>Fred&#x27;s Professor,</span> <span>Wuyue Professor,</span> <span>Huazhe</span></p>
-<div class="resource-pills"><a class="pill dark" href="https://github.com/TyrionWuYue/DexPiano" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code <span>↗</span></a><a class="pill" href="#performances"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg>Explore demos</a><span class="pill unavailable">Paper <small>Coming soon</small></span><span class="pill unavailable">Data <small>Coming soon</small></span></div>
+<p class="hero-description" hidden>Dexterous bimanual piano playing with human motion priors<br class="desktop-break"> and reinforcement learning.</p>
+<p class="authors"><span>Yue Wu,</span> <span>Kaizhe Hu,</span> <span>Han Zhang,</span> <span>Chenyuan Hu,</span> <span>Frederik Heller,</span> <span>Yao Xi,</span> <span>Zeyu Ping,</span> <span>Tianming Wei,</span> <span>Zhecheng Yuan,</span> <span>Fred&#x27;s Professor,</span> <span>Kairui Feng,</span> <span>Huazhe Xu</span></p>
+<p class="progress-notice">Stay tuned.</p>
+<div class="resource-pills" hidden><span class="pill unavailable"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code <small>Coming soon</small></span><a class="pill" href="#performances"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg>Explore demos</a><span class="pill unavailable">Paper <small>Coming soon</small></span></div>
 </section>
-<section class="showcase wrap" aria-label="Interactive piano illustration">
+<!-- Research sections stay hidden during the teaser release. -->
+<section hidden class="showcase wrap" aria-label="Interactive piano illustration">
 <div class="scene-header"><span><span class="status-dot"></span> A little coordination. A little music.</span><span class="scene-tag">INTERACTIVE ILLUSTRATION</span></div>
 <div class="piano-scene">
 <div class="scene-caption"><p>Two hands.<br><em>One melody.</em></p><span>Human motion → robot learning</span></div>
@@ -32,20 +34,33 @@
 <div class="transport"><button id="play" class="play-button" type="button" aria-pressed="false"><span id="play-icon" aria-hidden="true">▶</span><span id="play-label">Play illustration</span></button><div class="progress-track" aria-hidden="true"><div id="progress"></div></div><span id="time" class="time">0:00 / 0:16</span><button class="sound-button" id="sound" type="button" aria-pressed="false">Sound off</button></div>
 <p class="figure-note">Concept illustration · Original synthesized notes, not a robot recording. Tap the keys to explore.</p>
 </section>
-<section class="summary wrap" id="overview"><span class="section-kicker">THE IDEA</span><p><strong>A piano is a playground for dexterity.</strong> DexPiano explores how two robot hands can coordinate across a keyboard, connecting human demonstrations, motion priors, and reinforcement learning in a shared simulation and hardware workflow.</p></section>
-<section class="section wrap" id="method"><div class="section-heading"><div><span class="section-kicker">01 / THE APPROACH</span><h2>From human motion<br>to robotic touch.</h2></div><p>Observe the performance. Build a motion prior.<br>Learn to bring the notes together.</p></div>
+<section hidden class="summary wrap" id="overview"><span class="section-kicker">THE IDEA</span><p><strong>A piano is a playground for dexterity.</strong> DexPiano explores how two robot hands can coordinate across a keyboard, connecting human demonstrations, motion priors, and reinforcement learning in a shared simulation and hardware workflow.</p></section>
+<section hidden class="section wrap" id="method"><div class="section-heading"><div><span class="section-kicker">01 / THE APPROACH</span><h2>From human motion<br>to robotic touch.</h2></div><p>Observe the performance. Build a motion prior.<br>Learn to bring the notes together.</p></div>
 <div class="pipeline">
 <article class="pipeline-step"><div class="step-art video-art" aria-hidden="true"><div class="video-window"><span>↗</span><div class="mini-keys"></div><i class="trace t1"></i><i class="trace t2"></i></div><span class="art-tag">VIDEO + MIDI</span></div><div class="step-title"><span>01</span><h3>Observe & align</h3></div><p>Align a piano demonstration with its musical timing and recover the hand motion.</p></article>
 <article class="pipeline-step"><div class="step-art prior-art" aria-hidden="true"><svg viewBox="0 0 260 130"><g stroke="#e4e7e8"><path d="M20 30h220M20 65h220M20 100h220M50 10v110M100 10v110M150 10v110M200 10v110"/></g><path d="M20 100C40 100 40 24 65 25S100 108 124 78 151 10 174 40 202 90 240 22" stroke="#79a6c0" stroke-width="3" fill="none"/><path d="M20 110C60 90 50 70 80 85S130 26 155 62 198 20 240 47" stroke="#d59b88" stroke-width="3" fill="none"/><g fill="#79a6c0"><circle cx="65" cy="25" r="5"/><circle cx="124" cy="78" r="5"/><circle cx="174" cy="40" r="5"/></g></svg><span class="art-tag">MOTION PRIOR</span></div><div class="step-title"><span>02</span><h3>Retarget & replay</h3></div><p>Translate human motion to the robot and inspect the resulting prior in physics simulation.</p></article>
 <article class="pipeline-step"><div class="step-art policy-art" aria-hidden="true"><div class="policy-node">π</div><svg viewBox="0 0 260 140"><path d="M40 70h45m90 0h45M202 90v25H60V90" fill="none" stroke="#bdc5c8" stroke-width="2"/><path d="m79 65 6 5-6 5m135-10 6 5-6 5" fill="none" stroke="#bdc5c8" stroke-width="2"/><circle cx="32" cy="70" r="8" fill="#91b7ce"/><circle cx="228" cy="70" r="8" fill="#e5ad9d"/></svg><span class="art-tag">REINFORCEMENT LEARNING</span></div><div class="step-title"><span>03</span><h3>Learn & evaluate</h3></div><p>Train piano policies with motion guidance and evaluate note accuracy and coordination.</p></article>
 </div><p class="method-footnote">Built on <a href="https://github.com/mujocolab/mjlab" target="_blank" rel="noopener noreferrer">mjlab</a> and MuJoCo Warp. Hardware platform: two UR5e arms with Sharpa hands.</p></section>
-<section class="performances-section" id="performances"><div class="wrap section"><div class="section-heading"><div><span class="section-kicker">02 / THE PERFORMANCE</span><h2>See the music take shape.</h2></div><span class="draft-badge">Footage coming soon</span></div><p class="section-intro">A place for synchronized demonstrations, simulation replays, and real-world performances.</p>
+<section hidden class="performances-section" id="research-performances"><div class="wrap section"><div class="section-heading"><div><span class="section-kicker">02 / THE PERFORMANCE</span><h2>See the music take shape.</h2></div><span class="draft-badge">Footage coming soon</span></div><p class="section-intro">A place for synchronized demonstrations, simulation replays, and real-world performances.</p>
 <div class="tabs" role="tablist" aria-label="Performance views"><button role="tab" aria-selected="true" aria-controls="performance-panel" id="tab-simulation" data-view="simulation">Simulation</button><button role="tab" aria-selected="false" aria-controls="performance-panel" id="tab-hardware" data-view="hardware" tabindex="-1">Real robot</button><button role="tab" aria-selected="false" aria-controls="performance-panel" id="tab-human" data-view="human" tabindex="-1">Human demonstration</button></div>
 <div id="performance-panel" role="tabpanel" aria-labelledby="tab-simulation" tabindex="0"><div class="placeholder-stage"><div class="placeholder-keys" aria-hidden="true"></div><span class="outline-play" aria-hidden="true">▷</span><h3 id="media-title">Simulation replay</h3><p id="media-description">Full performance videos will be added here.</p><span class="placeholder-label">MEDIA PLACEHOLDER</span></div><div class="media-caption"><strong id="caption-title">Learning in a virtual piano environment</strong><span id="caption-detail">Motion priors · Bimanual coordination · Key events</span></div></div>
 <div class="evaluation-note"><span>ABOUT EVALUATION</span><p>Future results will pair each performance with its evaluation setup and note-level metrics. Quantitative results are not included in this preview.</p></div>
 </div></section>
-<section class="section wrap resources" id="resources"><div><span class="section-kicker">03 / EXPLORE FURTHER</span><h2>Behind the keys.</h2><p>Follow the project as the research takes shape.</p></div><div class="resource-list"><a href="https://github.com/TyrionWuYue/DexPiano" target="_blank" rel="noopener noreferrer"><span><strong>Project code</strong><small>Training, simulation & hardware workflows</small></span><span aria-hidden="true">↗</span></a><div><span><strong>Paper & citation</strong><small>Publication details will be added when available</small></span><span class="soon">Coming soon</span></div><div><span><strong>Demonstrations & assets</strong><small>Curated project materials</small></span><span class="soon">Coming soon</span></div></div></section>
+<section hidden class="section wrap resources" id="resources"><div><span class="section-kicker">03 / EXPLORE FURTHER</span><h2>Behind the keys.</h2><p>Follow the project as the research takes shape.</p></div><div class="resource-list"><div><span><strong>Project code</strong><small>Training, simulation & hardware workflows</small></span><span class="soon">Coming soon</span></div><div><span><strong>Paper & citation</strong><small>Publication details will be added when available</small></span><span class="soon">Coming soon</span></div><div><span><strong>Demonstrations & assets</strong><small>Curated project materials</small></span><span class="soon">Coming soon</span></div></div></section>
+<section class="teaser-performance wrap" id="performances" aria-labelledby="performance-title">
+<div class="teaser-heading"><span class="section-kicker">REAL ROBOT PERFORMANCE</span><h2 id="performance-title">A moment at the piano.</h2></div>
+<div class="teaser-video-frame">
+<!-- Real footage with a synchronized MIDI trace and cumulative key-state Micro-F1. -->
+<video class="teaser-video" controls loop playsinline preload="metadata" src="assets/waltz-hardware.mp4" poster="assets/waltz-hardware.jpg" aria-label="DexPiano performing Waltz on the real piano, with synchronized MIDI notes and cumulative Micro-F1" aria-describedby="teaser-video-note"></video>
+<div class="teaser-video-placeholder" hidden><span class="teaser-placeholder-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><p>Real robot. Real piano.</p><span>Video coming soon</span></div>
+</div>
+<div class="repertoire-note" id="teaser-video-note">
+<div class="repertoire-heading"><p class="repertoire-title">Chopin · <em>Minute Waltz</em></p><span class="repertoire-grade">Trinity Grade 8</span></div>
+<p class="repertoire-detail">Waltz in D-flat major, Op. 64 No. 1 · Opening 24 seconds</p>
+<p class="repertoire-source"><a href="https://www.trinitycollege.com/resource?id=10125#page=36" target="_blank" rel="noopener noreferrer">Trinity College London, <cite>Piano Repertoire List from 2023</cite> · Grade 8, No. 34 <span aria-hidden="true">↗</span></a></p>
+</div>
+</section>
 </main>
-<footer class="wrap"><a class="wordmark" href="#">DexPiano</a><p>Dexterity, in harmony.</p><span>Project page preview · 2026</span></footer>
-<script src="app.js"></script>
+<footer class="wrap"><a class="wordmark" href="#">DexPiano</a><p>Dexterity, in harmony.</p><span hidden>Project page preview · 2026</span></footer>
+<!-- Restore app.js when the interactive research sections are shown again. -->
 </body></html>
